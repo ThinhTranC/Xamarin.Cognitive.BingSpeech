@@ -12,7 +12,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
@@ -149,7 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xamarin.Cognitive.BingSpeech.Sample\Xamarin.Cognitive.BingSpeech.Sample.csproj">
-      <Project>{a117309a-ce6d-4d75-aae6-9dda12629b82}</Project>
+      <Project>{2a9a3038-c67a-4381-9cd5-e0a593277c76}</Project>
       <Name>Xamarin.Cognitive.BingSpeech.Sample</Name>
     </ProjectReference>
   </ItemGroup>

@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using System.Net;
 using Newtonsoft.Json;
 using System.Diagnostics;
-using PCLStorage;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.IO;
@@ -219,10 +218,8 @@ namespace Xamarin.Cognitive.BingSpeech
 					byte [] buffer = null;
 					int bytesRead = 0;
 
-					var file = await FileSystem.Current.GetFileFromPathAsync(audioFilePath);
-
 					using (outputStream) //must close/dispose output stream to notify that content is done
-					using (var audioStream = await file.OpenAsync (FileAccess.Read))
+					using (var audioStream = File.OpenRead (audioFilePath))
 					{
 						//read 1024 (BufferSize) (max) raw bytes from the input audio file
 						buffer = new Byte [checked((uint) Math.Min (BufferSize, (int) audioStream.Length))];
